@@ -6,8 +6,38 @@
 //  Copyright © 2016 Flatiron School. All rights reserved.
 //
 
+import Foundation
 
+enum Direction {
+    case north
+    case east
+    case south
+    case west
+}
 
+protocol SteerAbility {
+    var direction: Direction { get set }
+    
+    mutating func steerInDirection(_ direction: Direction)
+}
 
+extension SteerAbility {
+    
+    mutating func steerInDirection(_ direction: Direction) {
+        self.direction = direction
+    }
+    
+}
 
+class SailBoat : SteerAbility {
+    var direction: Direction = .north
+}
 
+class RowBoat : SteerAbility {
+    var direction: Direction = .north
+    
+}
+
+class SteamBoat : SteerAbility {
+    var direction: Direction = .north
+}
