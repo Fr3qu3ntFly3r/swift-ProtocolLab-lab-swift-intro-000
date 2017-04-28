@@ -95,4 +95,6 @@ So provide only an instance property called `direction` of type `Direction` with
 
 There is a file called `ShipTests.swift` which will make sure you implemented everything correctly. Press command + u to run your tests.
 
+Just that I can Request pull again.
+
 <a href='https://learn.co/lessons/ProtocolLab' data-visibility='hidden'>View this lesson on Learn.co</a>
